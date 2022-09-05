@@ -1,8 +1,6 @@
 Настройка "Пионер Мини"
 =======================
 
-
-
 .. image:: /_static/images/tuning.png
 	:align: center
 
@@ -42,8 +40,9 @@
    autopilot_parameters
    rc_setting
    rc_connection
-   logs
    accel-mini
+   mini first-power-on
+   logs
 
 
 

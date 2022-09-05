@@ -31,4 +31,3 @@
 
    mini-sborka
    mini-battery
-   mini_const_switch_on
