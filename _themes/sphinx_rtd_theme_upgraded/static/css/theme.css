@@ -6929,10 +6929,11 @@ footer span.commit code {
 }
 
 .rst-content .sidebar {
-	float: right;
-	width: 40%;
-	display: block;
-	margin: 0 0 24px 24px;
+	/*float: right;*/
+	/*width: 40%;*/
+	display: flex;
+	flex-direction: column;
+	margin: 24px 0px;
 	padding: 24px;
 	background: #f3f6f6;
 	border: 1px solid #e1e4e5
@@ -6941,16 +6942,17 @@ footer span.commit code {
 .rst-content .sidebar dl,
 .rst-content .sidebar p,
 .rst-content .sidebar ul {
-	font-size: 90%
+	font-size: 100%
 }
 
 .rst-content .sidebar .last,
 .rst-content .sidebar>:last-child {
+	display: flex;
 	margin-bottom: 0
 }
 
 .rst-content .sidebar .sidebar-title {
-	display: block;
+	display: flex;
 	font-family: Roboto Slab, ff-tisa-web-pro, Georgia, Arial, sans-serif;
 	font-weight: 700;
 	background: #e1e4e5;
