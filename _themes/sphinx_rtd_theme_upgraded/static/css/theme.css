@@ -6834,6 +6834,8 @@ footer span.commit code {
 .rst-content .section ul.simple li>*,
 .rst-content .section ul.simple li ol,
 .rst-content .section ul.simple li ul {
+	/*display: flex;*/
+	/*flex-direction: column;*/
 	margin-top: 0;
 	margin-bottom: 0
 }
@@ -6942,6 +6944,8 @@ footer span.commit code {
 .rst-content .sidebar dl,
 .rst-content .sidebar p,
 .rst-content .sidebar ul {
+	display: flex;
+	flex-direction: column;
 	font-size: 100%
 }
 
