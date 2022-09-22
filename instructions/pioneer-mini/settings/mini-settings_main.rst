@@ -35,10 +35,11 @@
    firmware_upgrade
    esp32-update
    autopilot_parameters
+   mini_battery
+   mini first-power-on
    rc_setting
    rc_connection
-   accel-mini
-   mini first-power-on
+   accel-mini   
    logs
 
 
