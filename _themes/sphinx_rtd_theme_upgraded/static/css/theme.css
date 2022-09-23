@@ -5559,7 +5559,7 @@ h4,
 h5,
 h6,
 legend {
-	margin-top: 0;
+	
 	font-weight: 100;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -5572,7 +5572,8 @@ p {
 
 h1 {
 	font-size: 200%;
-	margin: 20px 0px;
+	margin: 0px 0px;
+	padding: 2% 0%;
 }
 
 .rst-content .toctree-wrapper>p.caption,
@@ -6286,7 +6287,7 @@ html {
 }
 
 .wy-nav-content {
-	padding: 1.618em 3.236em;
+	padding: 0% 2%;
 	height: 100%;
 	max-width: 800px;
 	margin: auto
