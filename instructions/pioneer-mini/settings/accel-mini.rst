@@ -9,6 +9,12 @@
 
 .. attention:: Перед началом калибровки рекомендуется снять защиту воздушных винтов. Во время калибровки, ставьте квадрокоптер только на твёрдую и ровную поверхность, не производите ее на весу в руках! 
 
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/RLewlM72Efc?list=PLV31ZusyYaea0riqT4wL3znAhbiARwQqw" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
+
 Для начала калибровки, подключите квадрокоптер к Pioneer Station. После чего выберете значок квадрокоптера в верхнем меню, внутри будет вкладка "Калибровка", далее нажмите "Калибровка акселерометра".
 
 .. figure:: media/PioMiniCalibration/PioMiniAccelCalib_0.png

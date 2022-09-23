@@ -6421,7 +6421,7 @@ footer span.commit code {
 		background: rgba(0, 0, 0, .05)
 	}
 	.wy-nav-content {
-		margin: 0;
+		/*margin: 0;*/
 		background: #fcfcfc
 	}
 }
@@ -7430,7 +7430,7 @@ span[id*=MathJax-Span] {
 	flex-wrap: wrap;	
 	flex-direction: row;
 	max-width: 100%;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 0px 0px;
 }
 
 .buttons1.docutils.container p {	
