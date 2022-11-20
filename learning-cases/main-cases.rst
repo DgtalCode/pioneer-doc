@@ -46,3 +46,4 @@
    parking-finder/parking_finder
    dev_protection_for_pioneer_mini/main_text
    modul_led/main_text
+   trik_mailbox/trik_mailbox
