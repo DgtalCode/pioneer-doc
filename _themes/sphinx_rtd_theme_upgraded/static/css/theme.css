@@ -1,3 +1,11 @@
+.contents ul li p {
+	margin: 0px;
+}
+
+.contents ul li p a:visited, .toctree-wrapper ul li a:visited, .arabic li p a:visited, section p a:visited {
+	color: #2980b9 !important;
+}
+
 html {
 	box-sizing: border-box
 }
