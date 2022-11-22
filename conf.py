@@ -20,19 +20,27 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Pioneer'
-copyright = '2021, Geoscan LTD'
+copyright = '2022, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.4'
+version = '3.0'
 # The full version, including alpha/beta/rc tags
-release = 'September update 2021'
+release = 'Autumn update 2022'
 
 # Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
 
 rst_epilog = """
 
-.. |fw_ap_mini| replace:: `Pioneer Mini 1.6.7747 <https://disk.yandex.ru/d/xdrsPzICMUQgPw>`__
+.. |utd_ap_mini| replace:: 1.6.9202
+.. |utd_param_mini| replace:: 1.0.9202
+.. |utd_fw_esp| replace:: 0.5.6
+.. |utd_gs_jump| replace:: 1.14
+
+.. |utd_ap_base| replace:: 1.6.7178
+.. |utd_ap_max| replace:: 1.6.7287
+
+.. |fw_ap_mini| replace:: `Pioneer Mini 1.6.9202 <https://disk.yandex.ru/d/HgeUOCpiQfwvOA>`__
 .. |fw_ap_base| replace:: `Pioneer Base 1.6.7178 <https://disk.yandex.ru/d/WqHQAxirCzi7iw>`__
 .. |fw_ap_max| replace:: `Pioneer Max 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
 

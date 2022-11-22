@@ -244,6 +244,37 @@ SPI
     local spi = Spi.new(2, 1000000)
     spi:exchange("hello", 5) -- записать данные (data) длиной (size) и прочитать size
 
+Работа с камерой
+----------------
+Для понимания работы рекомендуется ознакомиться с примером: :doc:`examples/camera_record`
+
+Запрос захвата:
+
+.. code:: lua
+
+    camera.requestMakeShot()
+
+Проверка ответа на ранее сделанный запрос:
+
+.. code:: lua
+
+    result = camera.checkRequestShot()
+
+Возможные ответы:
+
+ - -1 - Ответ не получен.
+ - 0 - Команда выполнена успешно.
+ - 1 - Команда не выполнена.
+
+.. code:: lua
+
+    camera.requestRecordStart() - запрос на старт записи.
+    camera.requestRecordStop() - запрос на остановку записи.
+
+.. code:: lua
+
+    camera.checkRequestRecord() - проверка состояния связи.(получение ответа от устройства)
+
 Таймеры
 -------
 
@@ -435,58 +466,6 @@ SPI
 +--------------------+-----------------------------------------------------------+
 
 * событие Ev.ALTITUDE_REACHED ( коптер достиг высоты взлёта) начиная с версии АП 1.5.6173 более не используется.
-
-.. _Example:
-
-Пример скрипта
-==============
-
-.. code:: lua
-
-    local boardNumber = boardNumber
-    local unpack = table.unpack
-    local points = {
-            {-0.6, 0.3, 0.2},
-            {0.6, 0.3,  0.2},
-            {0, 0, 0.5},
-            {0.6, -0.3, 0.2}
-    }
-
-    local curr_point = 1
-
-    local function nextPoint()
-        if(#points >= curr_point) then
-            ap.goToLocalPoint(unpack(points[curr_point]))
-            curr_point = curr_point + 1
-        else
-            ap.push(Ev.MCE_LANDING)
-        end
-    end
-
-    function callback(event)
-        if(event == Ev.TAKEOFF_COMPLETE) then
-            nextPoint()
-        end
-        if(event == Ev.POINT_REACHED) then
-            nextPoint()
-        end
-    end
-
-
-    local leds = Ledbar.new(1)
-    local blink = 0
-    leds:set(0,1,1,1)
-    timerBlink = Timer.new(1, function ()
-            if(blink == 1) then
-                blink = 0
-            else
-                blink = 1
-            end
-            leds:set(0, blink, 0, 0)
-    end)
-    timerBlink:start()
-    ap.push(Ev.MCE_PREFLIGHT)
-    Timer.callLater(1, function() ap.push(Ev.MCE_TAKEOFF) end)
 
 Описание пинов разъемов модулей
 ===============================

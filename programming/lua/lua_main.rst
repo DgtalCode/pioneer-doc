@@ -29,3 +29,4 @@
    :caption: Содержание:
 
    lua
+   examples/lua-examples
