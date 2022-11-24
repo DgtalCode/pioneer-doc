@@ -1,10 +1,6 @@
 Дополнительные модули
 ========================
 
-.. figure:: /_static/images/connecting_modules.png
-   :align: center
-   :width: 200
-
 Подключите к "Пионеру" дополнительные модули, чтобы получить доступ к новым функциям. 
 
 .. image:: /_static/images/p_base.png
