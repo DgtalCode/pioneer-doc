@@ -1,0 +1,46 @@
+Модификация корпуса Pioneer Mini крюком захвата
+===============================================
+
+.. raw:: html
+
+   <div style="position: relative; padding-bottom: 50%; overflow: hidden; margin-bottom:30px;margin-left: 0px;margin-right: 0px;">
+        <iframe src="https://www.youtube.com/embed/I_H3c-ByGN0?list=PLV31ZusyYaebzbHk7L3fdJneqxzEnBbap" allowfullscreen="" style="position: absolute; width:100%; height: 100%;" frameborder="0"></iframe>
+   </div>
+
+Участники проекта
+-----------------
+
+**Автор проекта:** Плеханов Виталий с.Кулунда;
+
+Описание и цель проекта
+-----------------------
+
+Создание универсального устройства захвата в виде крюка.
+
+Решаемые задачи
+---------------
+
+* Освоение программы Blender
+* Разработка устройства захвата
+* Разработка стартовой площадки
+* Проведение тестовых полётов и проверка устройства
+
+Этапы разработки
+----------------
+
+Создание пробных образцов захвата и площадок.
+
+.. container:: flexrow
+
+	.. figure:: media/img01.jpg
+
+	.. figure:: media/img02.jpg
+
+.. figure:: media/img03.jpg
+
+Результат
+---------
+
+В результате проведённых экспериментов был спроектирован и построен готовый к использованию опытный образец крюка.
+
+.. figure:: media/img04.jpg

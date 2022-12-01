@@ -5455,7 +5455,8 @@ input[type=radio][disabled] {
 a {
 	color: #2980b9;
 	text-decoration: none;
-	cursor: pointer
+	cursor: pointer;
+	overflow-wrap: break-word;
 }
 
 a:hover {
@@ -5571,18 +5572,21 @@ p {
 }
 
 h1 {
-	font-size: 250%;
+	font-size: 220%;
 	margin: 0px 0px;
 	padding: 2% 0%;
+	overflow-wrap: break-word;
+	font-variation-settings: 'wght' 800;
 }
 
 .rst-content .toctree-wrapper>p.caption,
 h2 {
-	font-size: 150%
+	font-size: 140%;
+	font-variation-settings: 'wght' 700;
 }
 
 h3 {
-	font-size: 125%
+	font-size: 120%
 }
 
 h4 {
@@ -6418,7 +6422,7 @@ footer span.commit code {
 
 @media screen and (max-width:1900px) {
 	.wy-nav-content-wrap {
-		background: rgba(0, 0, 0, .05)
+		/*background: rgba(0, 0, 0, .05)*/
 	}
 	.wy-nav-content {
 		/*margin: 0;*/
@@ -6664,9 +6668,9 @@ footer span.commit code {
 
 .rst-content div[class^=highlight],
 .rst-content pre.literal-block {
-	border: 1px solid #e1e4e5;
+	border: 1px solid #dedede;
 	overflow-x: auto;
-	margin: 1px 0 24px
+	margin-bottom: 24px;
 }
 
 .rst-content div[class^=highlight] div[class^=highlight],
@@ -6681,9 +6685,9 @@ footer span.commit code {
 }
 
 .rst-content .linenodiv pre {
-	border-right: 1px solid #e6e9ea;
+	border: 1px solid #dedede;
 	margin: 0;
-	padding: 12px;
+	padding: 6px 12px 6px 12px;
 	font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
 	user-select: none;
 	pointer-events: none
@@ -6692,7 +6696,7 @@ footer span.commit code {
 .rst-content div[class^=highlight] pre {
 	white-space: pre;
 	margin: 0;
-	padding: 12px;
+	padding: 6px 12px 6px 12px;
 	display: block;
 	overflow: auto
 }

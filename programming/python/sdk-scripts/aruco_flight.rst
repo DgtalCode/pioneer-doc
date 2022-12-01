@@ -2,7 +2,9 @@
 ===================
 
 Скрипт Aruco_flight служит для изучения в Python: многопроцессорности, работы с буфером данных, функции распознавания Aruco-маркеров и работы с
-ними, а также с библиотекой pioneer_sdk. Перед выполнением скрипта необходимо произвести калибровку камеры в скрипте get_camera_samples: https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
+ними, а также с библиотекой pioneer_sdk. Перед выполнением скрипта необходимо произвести калибровку камеры в скрипте get_camera_samples: 
+
+https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
 
 Как работает алгоритм?
 ----------------------

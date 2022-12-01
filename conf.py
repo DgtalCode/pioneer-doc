@@ -143,14 +143,15 @@ html_static_path = ['_static']
 html_css_files = [
     'css/index.css',
     'css/tiles.css',
-    'css/cont_grid_layout.css',
-    'css/gallery_layout.css'
+    'css/cont_flex_layout.css',
+    'css/gallery_layout.css',
+    'msgOverlay.css'
 ]
 
 html_js_files = [
     'js/tiles.js',
     'js/index.js',
-    # 'newsMsg.js'
+    'newsMsg.js'
 ]
 
 # Custom sidebar templates, must be a dictionary that maps document names
