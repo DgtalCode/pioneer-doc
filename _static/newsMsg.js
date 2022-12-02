@@ -77,7 +77,7 @@ function callMsg(){
 	msgButtons.forEach(elem => {
 		 elem.addEventListener('click', btnClick);		 
 	})
-	document.cookie = "newsMsgFlag=1; max-age=20; domain=geoscan.aero";	
+	document.cookie = "newsMsgFlag=1; max-age=20; domain=geoscan.aero; path=/ru/beta-1";	
 }
 
 function btnClick(event){
