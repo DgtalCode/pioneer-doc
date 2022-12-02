@@ -2,7 +2,14 @@
 
 // wait loading a pages and styles
 window.onload = function(){
-	// callMsg()
+	
+	let newsMsgFlag = document.cookie.match(/newsMsgFlag=(.+?)(;|$)/);	
+	if (newsMsgFlag != null && newsMsgFlag[1] == 1 ){
+		console.log('not now')
+	}	
+	else{
+		callMsg()
+	}
 };
 
 function callMsg(){
@@ -70,7 +77,7 @@ function callMsg(){
 	msgButtons.forEach(elem => {
 		 elem.addEventListener('click', btnClick);		 
 	})
-
+	document.cookie = "newsMsgFlag=1; max-age=20 domain=docs.geoscan.aero";	
 }
 
 function btnClick(event){

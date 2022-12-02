@@ -145,7 +145,7 @@ html_css_files = [
     'css/tiles.css',
     'css/cont_flex_layout.css',
     'css/gallery_layout.css',
-    'msgOverlay.css'
+    'css/msgOverlay.css'
 ]
 
 html_js_files = [

@@ -5572,7 +5572,7 @@ p {
 }
 
 h1 {
-	font-size: 220%;
+	font-size: 36px;
 	margin: 0px 0px;
 	padding: 2% 0%;
 	overflow-wrap: break-word;
@@ -6388,6 +6388,7 @@ footer span.commit code {
 @media screen and (max-width:768px) {
 	.wy-body-for-nav {
 		background: #fcfcfc
+
 	}
 	.wy-nav-top {
 		display: block
@@ -6438,6 +6439,12 @@ footer span.commit code {
 	}
 	.wy-nav-content-wrap {
 		margin-left: 0
+	}
+}
+
+@media screen and (max-width:400px) {
+	h1{
+		font-size: 28px;
 	}
 }
 

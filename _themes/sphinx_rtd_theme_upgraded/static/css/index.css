@@ -5,7 +5,7 @@
 }
 
 .index h1 {
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .wy-nav-content {
@@ -17,28 +17,20 @@
     margin-bottom: 10px !important;
 }
 
-@media (max-width: 415px), (max-height: 415px) {
+@media (max-width: 768px) {
 
-    .index * {
-        font-size: 17px;
-    }
-
-    .index h1 {
-        font-size: 32px;
-    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 400px) {
     .index * {
-        font-size: 12px !important;
+        font-size: 17px !important;
     }
 
     .index * p,
     .index * ul {
-        line-height: 18px !important;
+        line-height: 22px !important;
     }
-
-    .index h1 {
-        font-size: 24px !important;
+    .index * h1{
+       font-size: 28px !important;
     }
 }
