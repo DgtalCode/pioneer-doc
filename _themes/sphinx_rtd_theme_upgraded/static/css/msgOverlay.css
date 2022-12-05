@@ -10,7 +10,8 @@
     position: fixed; display: flex; justify-content: center; align-items: center; 
     width: 100%;
     top: 20%;
-    z-index: 600;   
+    z-index: 600;
+    user-select: none;   
 }
 
 .msgBlock{
@@ -110,27 +111,12 @@
     color: #f95002;
 }
 
-@media(max-width: 768px){
-    .msgWrapper{
+
+
+@media(max-width: 920px) and (orientation: landscape){
+	.msgWrapper{
         left: 50%; top: 50%; transform: translate(-50%, -50%);
     }
-    .msgBtnWrapper{
-        min-width: 0;
-    }
-    .msgBlock{
-        width: 100%;
-        padding: 10%;
-    }
-    .msgHeader{
-        font-size: 40px;
-    }
-    .msgBtn{
-        width: 100%;
-        margin: 0px 0px 20px 0px;       
-    }
-}
-
-@media(max-width: 768px) and (orientation: landscape){
     .msgHeader{
        font-size: 34px;
     }
@@ -140,6 +126,26 @@
     .msgBtn{
         max-width: 48%;
         font-size: 17px;               
+    }
+}
+
+@media(max-width: 768px){
+    .msgWrapper{
+        left: 50%; top: 50%; transform: translate(-50%, -50%);
+    }
+    .msgBlock{
+        width: 100%;
+        padding: 10%;
+    }
+    .msgHeader{
+        font-size: 34px;
+    }
+    .msgBtnWrapper{
+        min-width: 0;
+    }
+    .msgBtn{
+        width: 100%;
+        margin: 0px 0px 20px 0px;       
     }
 }
 
