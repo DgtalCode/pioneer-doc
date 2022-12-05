@@ -48,6 +48,7 @@ function callMsg(){
 	msgContentText.insertAdjacentHTML('afterbegin', mainText);
 	msgBtnWrapper.children[0].prepend('Хочу посмотреть');
 	msgBtnWrapper.children[1].prepend('Не интересно');
+	
 
 	//Nesting
 	overlay.prepend(msgWrapper);
@@ -77,22 +78,24 @@ function callMsg(){
 	msgButtons.forEach(elem => {
 		 elem.addEventListener('click', btnClick);		 
 	})
-	document.cookie = "newsMsgFlag=1; max-age=20; domain=geoscan.aero; path=/ru/beta-1";	
+
+	document.cookie = "newsMsgFlag=1; max-age=30; secure; samesite=strict; domain=geoscan.aero; path=/ru/beta-1";	
 }
 
-function btnClick(event){
-	console.log(event.target.id);
+function btnClick(event){	
 	if (event.target.id == 'msgBtnOk'){
 		window.location.href = 'https://docs.geoscan.aero/ru/master/learning-cases/main-cases.html#id3';
 	}
 	if (event.target.id == 'msgBtnClose'){
-		closeNewsMsg();
+		closeNewsMsg(event)
 	}
+	
 }
 
-function closeNewsMsg(){
+function closeNewsMsg(event){
+	
 	let overlay = document.querySelectorAll('.msgOverlay');
-	console.log(overlay[0]);
+	
 	overlay[0].style.opacity = "0";
 	setTimeout(function(){
 		overlay[0].remove();

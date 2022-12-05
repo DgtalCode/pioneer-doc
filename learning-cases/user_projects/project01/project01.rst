@@ -32,7 +32,7 @@
 ----------------
 
 1) Сборка квадрокоптера Pioneer Mini
-2) Знакомство с библиотекой pioneer_sdk и её методами
+2) Знакомство с библиотекой `pioneer_sdk`_ и её методами
 3) Работа в редакторе кода PyCharm Community Edition
 
 Пример Python-скрипта в PyCharm Community Edition
@@ -60,3 +60,5 @@
 
 * Ссылка на EXE файл - `Yandex Disk <https://disk.yandex.ru/d/sCiUckS28Fl72g>`__
 * Проект на `GitHub <https://github.com/CodeWAds/PMFarm_v0.1>`__
+
+.. _pioneer_sdk:  https://docs.geoscan.aero/ru/master/programming/python/pioneer-sdk-methods.html

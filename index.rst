@@ -32,11 +32,10 @@
 .. |pioneermax| image:: _static/images/pioneer-max.png
    :width: 250
 
-
-
 .. raw:: html
 
     <div class="index">
+
 
 
 Документация Геоскан "Пионер"
