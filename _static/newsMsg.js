@@ -5,7 +5,7 @@ window.onload = function(){
 	
 	let newsMsgFlag = document.cookie.match(/newsMsgFlag=(.+?)(;|$)/);	
 	if (newsMsgFlag != null && newsMsgFlag[1] == 1 ){
-		console.log('not now')
+		// console.log('not now')
 	}	
 	else{
 		setTimeout(function(){
@@ -85,16 +85,18 @@ function callMsg(){
 	msgButtons.forEach(elem => {
 		 elem.addEventListener('click', btnClick);		 
 	})
-	document.cookie = "newsMsgFlag=1; max-age=604800; secure; samesite=strict; domain=geoscan.aero; path=/ru/master";
+	document.cookie = "newsMsgFlag=1; max-age=604800; secure; samesite=strict; domain=geoscan.aero; path=/ru";
 	// 604800 - 1week	
 }
 
 function btnClick(event){	
 	if (event.target.id == 'msgBtnOk'){
+		closeNewsMsg(event);
 		window.location.href = 'https://docs.geoscan.aero/ru/master/learning-cases/main-cases.html#id3';
+
 	}
 	if (event.target.id == 'msgBtnClose'){
-		closeNewsMsg(event)
+		closeNewsMsg(event);
 	}	
 }
 
