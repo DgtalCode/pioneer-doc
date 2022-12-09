@@ -5,7 +5,9 @@
 В этом разделе вы научитесь работать с квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных сценариев и узнаете как программировать подключаемые модули.
 
 
+
  .. toctree::
+
    :maxdepth: 2
    :caption: Содержание:
 
@@ -13,4 +15,4 @@
    /programming/pioneer_station/pioneer_station_main
    /programming/lua/lua_main
    python/python_main
-   pioneer_max/max_main   
+   pioneer_max/max_main
