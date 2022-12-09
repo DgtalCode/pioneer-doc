@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 let navTop = $('.wy-nav-top'),
 	scrollPrev = 0;
 
-console.log(navTop);
+// console.log(navTop);
 
 	$(window).scroll(function(){
 		let scrolled = $(window).scrollTop();

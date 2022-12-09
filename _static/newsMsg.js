@@ -5,7 +5,7 @@ window.onload = function(){
 	
 	let newsMsgFlag = document.cookie.match(/newsMsgFlag=(.+?)(;|$)/);	
 	if (newsMsgFlag != null && newsMsgFlag[1] == 1 ){
-		console.log('not now')
+		// console.log('not now')
 	}	
 	else{
 		setTimeout(function(){
@@ -92,7 +92,7 @@ function callMsg(){
 function btnClick(event){	
 	if (event.target.id == 'msgBtnOk'){
 		closeNewsMsg(event);
-		window.location.href = 'https://docs.geoscan.aero/ru/beta-1/learning-cases/main-cases.html#id3';
+		window.location.href = 'https://docs.geoscan.aero/ru/master/learning-cases/main-cases.html#id3';
 
 	}
 	if (event.target.id == 'msgBtnClose'){
