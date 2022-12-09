@@ -8,7 +8,9 @@ window.onload = function(){
 		console.log('not now')
 	}	
 	else{
-		callMsg()
+		setTimeout(function(){
+			callMsg()
+		},5000)		
 	}
 };
 
@@ -40,7 +42,7 @@ function callMsg(){
 
 
 	//Text
-	let headerText = ('<span>Кейсы от пользователей Pioneer Mini</span>');
+	let headerText = ('<span>Кейсы от пользователей Пионер Мини</span>');
 	let mainText = ('<span>На сайте появились новые кейсы от участников конкурса "Hello Pioneer". '+
 		'<br>Предлагаем ознакомиться с работами будущих инженеров и программистов!</span>');
 
@@ -60,26 +62,31 @@ function callMsg(){
 
 
 	//Insert and display
-	overlay.addEventListener('transitionstart', function(){
+	let observer1 = new MutationObserver(callback);	
+	observer1.observe(document.body, {childList: true})
+
+	function callback(mutationRecords,observer){
+		// console.log(mutationRecords);
 		let btn1 = document.getElementById('msgBtnOk');
 		let btn2 = document.getElementById('msgBtnClose');
 		setTimeout(function(){
 			btn1.style.transform = 'scale(1,1)';
 			btn2.style.transform = 'scale(1,1)';
 		},800)
-	})
+		observer1.disconnect();
+	}
+
 	document.body.prepend(overlay);
 	overlay.style.display = "block";
 	setTimeout(function(){overlay.style.opacity = "1";},20)
 
 	//Add EventListener
-
 	const msgButtons = document.querySelectorAll('.msgBtn');	
 	msgButtons.forEach(elem => {
 		 elem.addEventListener('click', btnClick);		 
 	})
-
-	document.cookie = "newsMsgFlag=1; max-age=30; secure; samesite=strict; domain=geoscan.aero; path=/ru/beta-1";	
+	document.cookie = "newsMsgFlag=1; max-age=604800; secure; samesite=strict; domain=geoscan.aero; path=/ru/beta-1";
+	// 604800 - 1week	
 }
 
 function btnClick(event){	
@@ -88,8 +95,7 @@ function btnClick(event){
 	}
 	if (event.target.id == 'msgBtnClose'){
 		closeNewsMsg(event)
-	}
-	
+	}	
 }
 
 function closeNewsMsg(event){

@@ -33,9 +33,15 @@ DXF модели Пионер Макс
 STL модели Пионер Мини
 ~~~~~~~~~~~~~~~~~~~~~~
 
-*   :download:`Защита воздушных винтов Пионер Мини<files/stl/pi-mini-guard.STL>`
+*	:download:`Рама Пионер Мини<files/stl/pioneemini-frame2.STL>`
+
+Рама Пионер Мини от Ивана Гурова - участника хакатона из Томского кванториума.
+
+*	:download:`Рама Пионер Мини "Bug_O_Fly"<files/stl/bug_o_fly_v3.3.STL>`
 
 Защита воздушных винтов для печати на FDM принтере
+
+*   :download:`Защита воздушных винтов Пионер Мини<files/stl/pi-mini-guard.STL>`
 
 *   :download:`Верхняя крышка Пионер Мини<files/stl/cover-PioneerMini.STL>`
 

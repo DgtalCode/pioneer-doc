@@ -10,17 +10,15 @@
         font-size: 150%;
 }
 
-
 .wy-nav-top {
     background: #fed136;
-    color: #000000;
+    color: #000;
+    transition: all 0.3s ease;
 }
 
-
-.wy-nav-top a {
-    color: #000000;
+.wy-nav-top.out{
+    transform: translateY(-100%);  
 }
-
 
 .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
     background-color: transparent;
@@ -47,7 +45,7 @@
 /*Для скрытия больших объектов с кодом в классе codeblocksize1*/
 
 .codeblocksize1{
-    max-height: 480px;
+    /*max-height: 480px;*/
     overflow: auto;
     margin-bottom:20px; 
 }
@@ -58,4 +56,12 @@
 
 .codeblocksize1 .code{
 	width: 100%;
+}
+
+/*Замена сломанного отображения codeblock → перенести в основные стили?*/
+/*theme.css 7030*/
+
+.field-list.simple{
+    display: flex;
+    flex-direction: column;
 }

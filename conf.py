@@ -20,13 +20,13 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Pioneer'
-copyright = '2021, Geoscan LTD'
+copyright = '2022, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.4'
+version = '2.5'
 # The full version, including alpha/beta/rc tags
-release = 'September update 2021'
+release = 'December update 2022'
 
 # Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
 
@@ -49,6 +49,11 @@ rst_epilog = """
 
 .. |dnld_ps| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
 .. |dnld_ps32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
+
+.. role:: raw-html(raw)
+   :format: html
+
+.. |br| replace:: :raw-html:`<br>`
 
 """
 
@@ -151,7 +156,8 @@ html_css_files = [
 html_js_files = [
     'js/tiles.js',
     'js/index.js',
-    'newsMsg.js'
+    'newsMsg.js',
+    'topNavScroll.js'
 ]
 
 # Custom sidebar templates, must be a dictionary that maps document names
