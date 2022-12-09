@@ -24,9 +24,11 @@ copyright = '2022, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '3.0'
+
+version = '3.2'
 # The full version, including alpha/beta/rc tags
-release = 'Autumn update 2022'
+release = 'December update 2022'
+
 
 # Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
 
@@ -45,10 +47,15 @@ rst_epilog = """
 .. |fw_ap_max| replace:: `Pioneer Max 1.6.7287 <https://disk.yandex.ru/d/ffN2OSTgEO8cqg>`__
 
 .. |fw_opt_board| replace:: `Option Bord 4.0 <https://disk.yandex.ru/d/8M2tgzu0DCV0jw>`__
-.. |fw_USNav| replace:: `Модуль USNav <https://disk.yandex.ru/d/1YYCDEVqNCpBvA>`__
+.. |fw_USNav| replace:: `Модуль USNav <https://disk.yandex.ru/d/izGHNjrqU39B5Q>`__
 
 .. |dnld_ps| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
 .. |dnld_ps32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
+
+.. role:: raw-html(raw)
+   :format: html
+
+.. |br| replace:: :raw-html:`<br>`
 
 """
 
@@ -143,13 +150,16 @@ html_static_path = ['_static']
 html_css_files = [
     'css/index.css',
     'css/tiles.css',
-    'css/cont_grid_layout.css',
-    'css/gallery_layout.css'
+    'css/cont_flex_layout.css',
+    'css/gallery_layout.css',
+    'css/msgOverlay.css'
 ]
 
 html_js_files = [
     'js/tiles.js',
-    'js/index.js'
+    'js/index.js',
+    'newsMsg.js',
+    'topNavScroll.js'
 ]
 
 # Custom sidebar templates, must be a dictionary that maps document names

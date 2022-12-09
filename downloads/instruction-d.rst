@@ -7,3 +7,5 @@
 
 *   `Инструкция для RC Пульта Flysky FS-6S <https://www.flyingtech.co.uk/sites/default/files/product_files/FS-i6S-MANUAL-EN-20161001.pdf>`__
 
+* 	:download:`JSON <files/docs/config.json>`
+
