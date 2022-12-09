@@ -25,7 +25,7 @@ author = 'Geoscan LTD'
 
 # The short X.Y version
 
-version = '3.'
+version = '3.2'
 # The full version, including alpha/beta/rc tags
 release = 'December update 2022'
 
