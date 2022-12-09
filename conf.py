@@ -24,9 +24,11 @@ copyright = '2022, Geoscan LTD'
 author = 'Geoscan LTD'
 
 # The short X.Y version
-version = '2.5'
+
+version = '3.2'
 # The full version, including alpha/beta/rc tags
 release = 'December update 2022'
+
 
 # Здесь перечисляются множественные подстановки, которые при билде будут объявлятся в конце страницы (версии,ссылки и.т.д) ----
 

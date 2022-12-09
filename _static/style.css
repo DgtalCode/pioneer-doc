@@ -24,6 +24,7 @@
     background-color: transparent;
 }
 
+
 /*Параметры для класса flexrow. Вызов через .. container:: flexrow */
 
 .flexrow{
@@ -65,3 +66,4 @@
     display: flex;
     flex-direction: column;
 }
+
