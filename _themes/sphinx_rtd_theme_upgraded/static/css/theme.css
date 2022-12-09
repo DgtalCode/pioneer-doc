@@ -6267,14 +6267,17 @@ html {
 }
 
 .wy-nav-top a {
-	color: #000;
-	font-weight: 700;
-	display: flex;
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     height: 100%;
     width: 60%;
     justify-content: center;
     align-items: center;
     margin: auto;
+	color: #000;
+	font-weight: 700;
+	display: flex;
 }
 
 .wy-nav-top img {
@@ -6287,13 +6290,10 @@ html {
 }
 
 .wy-nav-top i {
-	position: absolute;
-    top: 13px;
-    left: 13px;
 	font-size: 21px;
 	float: left;
 	cursor: pointer;
-	padding: inherit;
+	padding: 13px;
 
 	-webkit-tap-highlight-color: transparent;
 }
