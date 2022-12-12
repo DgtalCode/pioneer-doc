@@ -47,3 +47,10 @@ Pioneer Control - программа управления квадрокопте
 .. figure:: media/img02.png
 
 В дальнейшем планируется добавить в раздел «Scripts» готовые скрипты с примерами для начинающих (освоение программирования на Python). 
+
+Материалы проекта
+-----------------
+
+* Презентация: `Pioneer Control - программа управления квадрокоптером <https://storage.yandexcloud.net/pioneer.geoscan.aero/User%20projects/prj-08/Pioneer%20Control%20-%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BA%D0%B2%D0%B0%D0%B4%D1%80%D0%BE%D0%BA%D0%BE%D0%BF%D1%82%D0%B5%D1%80%D0%BE%D0%BC.pptx>`__
+
+* Исходные файлы программы `Pioneer Control <https://storage.yandexcloud.net/pioneer.geoscan.aero/User%20projects/prj-08/Pioneer%20Control.zip>`__
