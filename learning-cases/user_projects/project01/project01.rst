@@ -1,5 +1,5 @@
 Применение Пионера Мини в сельском хозяйстве
-===============================================
+============================================
 
 .. raw:: html
 
@@ -59,7 +59,13 @@
 * В ходе работы над проектом Иван научился основам работы в PyCharm Community Edition и работе c Python-скриптами.
 * Данная тема показалась интересной и перспективной. В дальнейшем Иван планирует работать над этой темой, добавляя новые функции в программу и совершенствуя её.
 
+
+Материалы проекта
+-----------------
+
 * Ссылка на EXE файл - `Yandex Disk <https://disk.yandex.ru/d/sCiUckS28Fl72g>`__
 * Проект на `GitHub <https://github.com/CodeWAds/PMFarm_v0.1>`__
+* Презентация: `Применение Пионера Мини в сельском хозяйстве <https://storage.yandexcloud.net/pioneer.geoscan.aero/User%20projects/prj-01/%D0%98%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20Pioneer%20Mini%20%D0%B2%20%D1%81%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%BC%20%D1%85%D0%BE%D0%B7%D1%8F%D0%B9%D1%81%D1%82%D0%B2%D0%B5.ppt>`__
+
 
 .. _pioneer_sdk:  https://docs.geoscan.aero/ru/master/programming/python/pioneer-sdk-methods.html

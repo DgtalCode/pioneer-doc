@@ -1,4 +1,4 @@
-Сборка Базового Пионера
+Сборка "Пионера"
 ================
 
 В базовом наборе "Пионер" есть все элементы и инструменты для сборки.
@@ -14,11 +14,11 @@
 
 
 .. image:: /_static/images/construction_2.png
-	:align: center
+   :align: center
 .. image:: /_static/images/construction_3.png
-	:align: center
+   :align: center
 .. image:: /_static/images/construction_4.png
-	:align: center
+   :align: center
 
 Собирайте "Пионер" в два этапа:
 
