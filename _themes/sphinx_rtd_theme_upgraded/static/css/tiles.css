@@ -7,10 +7,10 @@
 }
 
 .tile {
-    margin-bottom: 24px;
+    margin: 10px 0px;
     background-color: white;
-    box-shadow: 0px 2px 23px -15px rgba(0,0,0,20);
-    border-radius: 6px;
+    box-shadow: 0px 15px 15px -10px #00000026;
+    /*border-radius: 6px;*/
     display: grid;
     grid-template-columns: 100px 210px minmax(0, 60px) 15px minmax(330px, auto);
     grid-template-rows: var(--tile-height) auto;
@@ -31,7 +31,6 @@
     transition-property: color;
     transition-duration: 200ms;
     transition-timing-function: ease-in-out;
-    color: black;
 }
 
 .tile.large .header p,
@@ -94,7 +93,7 @@
 .tile:hover hr {
     background-color: #E15D2B;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1260px) {
     .tile {
         grid-template-columns: minmax(120px, 190px) 15px minmax(185px, auto);
     }

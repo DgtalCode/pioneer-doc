@@ -185,8 +185,6 @@
 
         learning-cases/main-cases
 
-`Вернуться на сайт "Пионер"`_
-
 .. toctree::
     :hidden:
     :maxdepth: 2
@@ -200,3 +198,7 @@
     learning-cases/main-cases
     FAQ
     changelog
+
+.. raw:: html
+
+    </div>

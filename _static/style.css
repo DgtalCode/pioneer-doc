@@ -1,5 +1,5 @@
 .wy-nav-content {
-    max-width: 70%;
+    max-width: 68%;
 }
 .wy-side-nav-search {
     background-color: #fed136;
@@ -62,8 +62,54 @@
 /*Замена сломанного отображения codeblock → перенести в основные стили?*/
 /*theme.css 7030*/
 
+footer a {
+    color: #7e7e7e;
+    font-weight: bold;
+}
+footer a:visited {
+    color: #7e7e7e;
+}
+footer a:hover {
+    color: #505050;
+}
+
+footer span{
+    padding: 4px 0px;
+}
+
 .field-list.simple{
     display: flex;
     flex-direction: column;
 }
+
+/*Footer → replace in footer.css or theme.css*/
+.projectInfo{
+    display: flex;
+    flex-direction: column; 
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+}
+
+.socialIcon{
+    display: flex;
+    margin: 4px 0px;
+}
+
+.socialIcon a{
+    height: 36px;
+    margin-right: 10px;
+}
+
+.socialIcon a path{
+    fill: #a1a1a1;
+    transition: all 0.5s ease;
+}
+
+.socialIcon a:hover path{
+    fill: #313131bd;
+}
+
 

@@ -5898,7 +5898,7 @@ html {
 	color: #404040;
 	font-weight: 700;
 	position: relative;
-	background: #fcfcfc;
+	background: #f6f6f6;
 	border: none;
 	padding: .4045em 1.618em
 }
@@ -6230,7 +6230,7 @@ html {
 	overflow-y: hidden;
 	min-height: 100%;
 	color: #9b9b9b;
-	background: #343131;
+	background: #313131;
 	z-index: 200;
 
 	transition: all 0.3s ease;
@@ -6240,7 +6240,7 @@ html {
 	width: 320px;
 	position: relative;
 	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow-y: hidden;
 	height: 100%
 }
 
@@ -6299,17 +6299,21 @@ html {
 }
 
 .wy-nav-content-wrap {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 	margin-left: 300px;
-	background: #fcfcfc;
+	background: #f6f6f6;
 	min-height: 100%;
 	transition: all 0.3s ease;
 }
 
 .wy-nav-content {
-	padding: 0% 2%;
+	/*padding: 0% 2%;*/
 	height: 100%;
 	max-width: 800px;
-	margin: auto
+	/*margin: auto*/
 }
 
 .wy-body-mask {
@@ -6326,7 +6330,15 @@ html {
 }
 
 footer {
-	color: grey
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 16% 30px 16%;
+	/*height: 200px;*/
+	width: 100%;
+	margin-top: 60px;
+	/*background-color: #c9c9c9;*/
+	border-top: 1px solid #dbdbdb;
+	color: #a1a1a1;
 }
 
 footer p {
@@ -6400,9 +6412,15 @@ footer span.commit code {
 	margin-left: 24px
 }
 
+.contentInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+}
+
 @media screen and (max-width:768px) {
 	.wy-body-for-nav {
-		background: #fcfcfc
 
 	}
 	.wy-nav-top {
@@ -6434,14 +6452,31 @@ footer span.commit code {
 	}
 	.wy-nav-content-wrap.shift {
 		position: fixed;
-		min-width: 100%;
-		/*left: 85%;*/
-		/*transform: translateX(300px);*/		
+		min-width: 100%;		
 		top: 0;
 
 		height: 100%;
-		overflow: hidden
+		overflow: hidden;
 	}
+	footer{
+		flex-direction: column;
+		padding: 20px 6% 24px 6%;
+	}
+	.contentInfo{
+    	flex-direction: column;
+    	padding: 10px 0px; 
+    	text-align: left;
+	}
+}
+
+@media screen and (max-width:992px) {
+	.wy-nav-content-wrap .wy-nav-content {
+		max-width: 86%;
+	}
+	footer{
+		padding: 20px 7% 24px 7%;
+	}
+
 }
 
 @media screen and (max-width:1900px) {
@@ -6450,7 +6485,7 @@ footer span.commit code {
 	}
 	.wy-nav-content {
 		/*margin: 0;*/
-		background: #fcfcfc
+		/*background: #fcfcfc*/
 	}
 }
 
