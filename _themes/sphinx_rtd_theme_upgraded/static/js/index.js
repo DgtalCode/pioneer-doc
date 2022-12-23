@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         location.pathname === "/ru/master/") {
         document.getElementsByClassName('rst-footer-buttons')[0].style.display = "none";
         document.getElementsByClassName('headerlink')[0].style.display = "none";
-        document.getElementsByClassName('wy-nav-content')[0].style.maxWidth = "70%";
+        // document.getElementsByClassName('wy-nav-content')[0].style.maxWidth = "70%";
     }
     let toclist = document.getElementsByClassName('wy-menu-vertical')[0].children;
     if (toclist.length > 2) {
