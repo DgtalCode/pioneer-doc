@@ -6349,7 +6349,7 @@ footer p {
 footer span.commit .rst-content tt,
 footer span.commit code {
 	padding: 0;
-	font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, Courier, monospace;
+	font-family: Roboto Light, Lato, proxima-nova, Helvetica Neue, Arial, monospace;
 	font-size: 1em;
 	background: none;
 	border: none;
@@ -6451,10 +6451,9 @@ footer span.commit code {
 		padding: 58px 6% 6% 6%;
 	}
 	.wy-nav-content-wrap.shift {
-		position: fixed;
+		/*position: fixed;*/
 		min-width: 100%;		
 		top: 0;
-
 		height: 100%;
 		overflow: hidden;
 	}

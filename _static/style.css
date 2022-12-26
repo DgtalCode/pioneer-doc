@@ -73,10 +73,6 @@ footer a:hover {
     color: #505050;
 }
 
-footer span{
-    padding: 4px 0px;
-}
-
 .field-list.simple{
     display: flex;
     flex-direction: column;
@@ -86,6 +82,10 @@ footer span{
 .projectInfo{
     display: flex;
     flex-direction: column; 
+}
+
+.projectInfo span{
+    padding: 4px 0px;
 }
 
 .social{
