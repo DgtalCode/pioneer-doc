@@ -19,3 +19,4 @@
    pioneer-standart/main-standart
    pioneer-mini/main-mini
    pioneer-max/main-max
+   remote-controller/remote-controller

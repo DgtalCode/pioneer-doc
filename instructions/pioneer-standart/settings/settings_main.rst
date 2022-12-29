@@ -19,7 +19,5 @@
    :caption: Содержание:
 
    firmware_upgrade
-   rc_setting
-   rc_connection
    autopilot_parameters
    logs
