@@ -37,7 +37,7 @@
    esp32-update
    autopilot_parameters
    mini_battery
-   rc_mounting
+   rc_setting
    accel-mini   
    logs
 
