@@ -9,13 +9,9 @@
    :maxdepth: 2
    :caption: Содержание:
 
-
-
    simulator
    operation_lipo
    operation_flight
-   rc_unit
-   rc_control
    flight_preparation
 
 
