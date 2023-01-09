@@ -236,7 +236,7 @@
 Интеграция с программой управления квадрокоптером
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
 
 Данный код позволяет управлять квадрокоптером Геоскан Пионер Мини с помощью ноутбука клавишами WASD, а также
@@ -253,7 +253,7 @@
 Тут задаются переменные для перемещений квадрокоптера, то есть указывается расстояние, на котороое коптер должен перемещаться
 при одном нажатии на кнопку:
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 11-17
 
@@ -265,13 +265,13 @@
 
 * **old_prediction** - хранит значение предсказания нейросети с предыдущей итерации цикла. Служит в тех же целях, что и **leds_sent**.
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 19-22
 
 На строках **24-27** реализованна функция учёта угла курса при подсчёте смещения по заданной команде с клавиатуры:
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 24-27
 
@@ -283,21 +283,21 @@
 * а также преобразование RGB-зображения в формат PIL (библиотека для работы с изображениями) **(34)**
 * и наконец получение предсказания модели **(36)**
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 25-31
 
 На строках **33-93** происходит считывание и обработка нажатий клавиш клавиатуры, а также отправка команды квадрокоптеру на движение
 в новую точку:
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 33-93
 
 На строке **99-100** располагается отрисовка текста ка показываемом на экране компьютера изображении, в котором содержится наименование
 предсказанного нейросетью класса.
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 99-100
 
@@ -307,7 +307,7 @@
 **True**. Далее происходит проверка, различаются ли предсказания на текущей и предыдущей итерациях. Если различаются, то это значит, что
 необходимо отправлять на светодиоды новые значения, то есть переменная **leds_sent** становится **False**.
 
-.. literalinclude:: ./parking_finder/main.py
+.. literalinclude:: main.py
    :language: python
    :lines: 102-113
 
