@@ -1,3 +1,11 @@
+.contents ul li p {
+	margin: 0px;
+}
+
+.contents ul li p a:visited, .toctree-wrapper ul li a:visited, .arabic li p a:visited, section p a:visited {
+	color: #2980b9 !important;
+}
+
 html {
 	box-sizing: border-box
 }
@@ -134,17 +142,21 @@ sub {
 	bottom: -.25em
 }
 
-dl,
-ol,
-ul {
+.wy-menu dl,
+.wy-menu ol,
+.wy-menu ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	list-style-image: none
 }
 
-li {
+.wy-menu li {
 	list-style: none
+}
+
+li p {
+	margin-bottom: 12px;
 }
 
 dd {
@@ -155,7 +167,7 @@ img {
 	border: 0;
 	-ms-interpolation-mode: bicubic;
 	vertical-align: middle;
-	max-width: 100%
+	max-width: 100%;
 }
 
 svg:not(:root) {
@@ -5561,7 +5573,7 @@ h4,
 h5,
 h6,
 legend {
-	
+
 	font-weight: 100;
 	font-family: 'Montserrat', sans-serif;
 }
@@ -6452,7 +6464,7 @@ footer span.commit code {
 	}
 	.wy-nav-content-wrap.shift {
 		/*position: fixed;*/
-		min-width: 100%;		
+		min-width: 100%;
 		top: 0;
 		height: 100%;
 		overflow: hidden;
@@ -6463,7 +6475,7 @@ footer span.commit code {
 	}
 	.contentInfo{
     	flex-direction: column;
-    	padding: 10px 0px; 
+    	padding: 10px 0px;
     	text-align: left;
 	}
 }
@@ -6912,7 +6924,7 @@ footer span.commit code {
 
 .rst-content .line-block {
 	margin-left: 0;
-	margin-bottom: 24px;
+	margin-bottom: 0px;
 	line-height: 24px
 }
 
@@ -7255,11 +7267,12 @@ a .rst-content tt {
 }
 
 .rst-content dl {
-	margin-bottom: 24px
+	margin-bottom: 12px;
+	margin-top: 0px
 }
 
 .rst-content dl dt {
-	font-weight: 700;
+	/*font-weight: 700;*/
 	margin-bottom: 12px
 }
 
@@ -7267,7 +7280,7 @@ a .rst-content tt {
 .rst-content dl p,
 .rst-content dl table,
 .rst-content dl ul {
-	margin-bottom: 12px
+	/*margin-bottom: 12px*/
 }
 
 .rst-content dl dd {
@@ -7486,9 +7499,9 @@ span[id*=MathJax-Span] {
 
 @font-face {
 	font-family: Montserrat;
-	font-style: normal; 
-	font-weight: normal; 
-	src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");	
+	font-style: normal;
+	font-weight: normal;
+	src: url(fonts/Montserrat-VariableFont_wght.ttf) format("truetype");
 }
 
 
@@ -7497,16 +7510,16 @@ span[id*=MathJax-Span] {
 
 .buttons1.docutils.container {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
 	flex-direction: row;
 	max-width: 100%;
 	margin: 0px 0px 0px 0px;
 }
 
-.buttons1.docutils.container p {	
+.buttons1.docutils.container p {
 	display: flex;
 	flex: 1;
-	flex-direction: row;	
+	flex-direction: row;
 	margin: 0px 0px;
 	padding: 0px 20px;
 	background-color: #e3e3e3;

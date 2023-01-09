@@ -17,7 +17,7 @@
 }
 
 .wy-nav-top.out{
-    transform: translateY(-100%);  
+    transform: translateY(-100%);
 }
 
 .wy-table-odd td, .wy-table-striped tr:nth-child(2n-1) td, .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td {
@@ -33,7 +33,7 @@
 	margin: -8px;
 }
 .flexrow img{
-	padding: 0px 8px;	
+	padding: 0px 8px;
 }
 
 @media(max-width: 1400px){
@@ -48,7 +48,7 @@
 .codeblocksize1{
     /*max-height: 480px;*/
     overflow: auto;
-    margin-bottom:20px; 
+    margin-bottom:20px;
 }
 
 .codeblocksize1 .linenodiv pre{
@@ -81,7 +81,7 @@ footer a:hover {
 /*Footer → replace in footer.css or theme.css*/
 .projectInfo{
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .projectInfo span{
