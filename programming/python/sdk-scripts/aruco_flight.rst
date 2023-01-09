@@ -18,9 +18,8 @@ https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
 **drone_flight** – за управление квадрокоптером.
 
 .. figure:: media/image1.PNG
-   :align: center
-   :scale:  80%
-
+    :align: center
+    :scale:  80%
 
     Рисунок 1 - Принципиальная схема работы алгоритма
 
@@ -29,9 +28,8 @@ https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
 заходит на посадку.
 
 .. figure:: media/image2.PNG
-   :align: center
-   :scale:  80%
-
+    :align: center
+    :scale:  80%
 
     Рисунок 2 - Распределение потоков
 
@@ -44,8 +42,8 @@ https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
 проекция от него, чтобы держаться на определённом растяни от маркера.
 
 .. figure:: media/image3.PNG
-   :align: center
-   :scale:  50%
+    :align: center
+    :scale:  50%
 
     Рисунок 3 - Оси квадрокоптера и маркера
 
@@ -80,65 +78,65 @@ https://github.com/geoscan/pioneer_sdk/tree/master/camera_calibration
 
 1. Импортируем необходимые библиотеки и определяем их назначение:
 
-  .. code-block:: python
+    .. code-block:: python
 
-      from pioneer_sdk import Pioneer
-      import os
-      import sys
-      import math
-      import cv2
-      import cv2.aruco as aruco
-      import numpy as np
-      import yaml
-      import multiprocessing as mp
-      from multiprocessing.managers import BaseManager
+        from pioneer_sdk import Pioneer
+        import os
+        import sys
+        import math
+        import cv2
+        import cv2.aruco as aruco
+        import numpy as np
+        import yaml
+        import multiprocessing as mp
+        from multiprocessing.managers import BaseManager
 
-  -  | **Pioneer_sdk** – библиотека для управления квадрокоптером;
+    -  | **Pioneer_sdk** – библиотека для управления квадрокоптером;
      | Описание библиотеки Pioneer_sdk - https://pioneer-doc.readthedocs.io/ru/master/programming/python/pioneer-sdk-methods.html;
 
-  -  | **NumPy** – библиотека для работы с массивами данных;
+    -  | **NumPy** – библиотека для работы с массивами данных;
      | Описание библиотеки NumPy - https://numpy.org/doc/stable/;
 
-  -  | **Cv2** – библиотека машинного зрения;
+    -  | **Cv2** – библиотека машинного зрения;
      | Описание библиотеки OpenCV - https://docs.opencv.org/master/index.html;
 
-  -  | **sys** – библиотека, которая обеспечивает доступ к некоторым переменным и функциям, взаимодействующим с интерпретатором python;
+    -  | **sys** – библиотека, которая обеспечивает доступ к некоторым переменным и функциям, взаимодействующим с интерпретатором python;
      | Описание библиотеки sys - https://docs.python.org/3/library/sys.html;
 
-  -  | **os** – библиотека, которая предоставляет множество функций для работы с операционной системой;
+    -  | **os** – библиотека, которая предоставляет множество функций для работы с операционной системой;
      | Описание библиотеки os - https://docs.python.org/3/library/os.html;
 
-  -  | **yaml** – библиотека для работы с форматом данных yaml;
+    -  | **yaml** – библиотека для работы с форматом данных yaml;
      | Описание библиотеки yaml - https://pyyaml.org/wiki/PyYAMLDocumentation;
 
-  -  | **multiprocessing** – библиотека для параллельной обработки данных на разных ядрах процессора в Python;
+    -  | **multiprocessing** – библиотека для параллельной обработки данных на разных ядрах процессора в Python;
      | Описание библиотеки multiprocessing - https://docs.python.org/3/library/multiprocessing.html;
 
 
 2. Создаём функцию image_proc(buff, drone, camera_mtx, camera_dist) в которой будем получать изображение и искать на нём Aruco-маркеры:
 
-  .. code-block:: python
+    .. code-block:: python
 
-      def image_proc(buff, drone, camera_mtx, camera_dist):
+        def image_proc(buff, drone, camera_mtx, camera_dist):
 
 3. Для работы с модулем OpenCV по определению Aruco-маркеров создадим следующие переменные:
 
-  - **size_of_marker** – указываем длину сторон маркера в метрах.
-  - **aruco_dict** – тип маркеров.
-  - **aruco_parametrs** – параметры обнаружения.
+    - **size_of_marker** – указываем длину сторон маркера в метрах.
+    - **aruco_dict** – тип маркеров.
+    - **aruco_parametrs** – параметры обнаружения.
 
-  .. code-block:: python
+    .. code-block:: python
 
-    size_of_marker = 0.12  # side length in meters
-    aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_1000)
-    aruco_parameters = aruco.DetectorParameters_create()
+        size_of_marker = 0.12  # side length in meters
+        aruco_dict = aruco.Dictionary_get(aruco.DICT_6X6_1000)
+        aruco_parameters = aruco.DetectorParameters_create()
 
-  В бесконечном цикле будем определять и выделять маркер на изображении:
+    В бесконечном цикле будем определять и выделять маркер на изображении:
 
-  .. code-block:: python
+    .. code-block:: python
 
-    while True:
-      try:
+        while True:
+          try:
 
 4. В переменную camera_frame передаём изображение от квадрокоптера:
 
