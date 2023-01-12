@@ -78,10 +78,6 @@ footer a:hover {
     flex-direction: column;
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 /*Footer → replace in footer.css or theme.css*/
 .projectInfo{
     display: flex;
@@ -115,9 +111,3 @@ footer a:hover {
 .socialIcon a:hover path{
     fill: #313131bd;
 }
-
-
-<<<<<<< Updated upstream
-=======
-/*Slider → replace in sliders.css*/
->>>>>>> Stashed changes
