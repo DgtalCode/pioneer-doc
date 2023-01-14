@@ -40,6 +40,7 @@
    rc_setting
    accel-mini   
    logs
+   esp_webinterface
 
 
 
