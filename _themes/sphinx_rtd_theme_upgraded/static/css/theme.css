@@ -5655,9 +5655,11 @@ article ul {
 	margin-bottom: 24px
 }
 
+.rst-content .section ul li,
 .rst-content section ul li,
 .rst-content .toctree-wrapper ul li,
 .wy-plain-list-disc li,
+.article ul li,
 article ul li {
 	list-style: disc;
 	margin-left: 24px;
