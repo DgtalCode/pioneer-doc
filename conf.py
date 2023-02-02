@@ -52,6 +52,8 @@ rst_epilog = """
 .. |dnld_ps| replace:: `Установщик Pioneer Station <https://dl.geoscan.aero/pioneer/upload/GCS/GEOSCAN_Pioneer_Station.exe>`__
 .. |dnld_ps32| replace:: `Установщик Pioneer Station 32bit <https://dl.geoscan.aero/pioneer/upload/GCS/PioneerStationWin32.zip>`__
 
+.. |dnld_njet| replace:: `NJET <https://disk.yandex.ru/d/lv-1D3d56IktXw>`__
+
 .. role:: raw-html(raw)
    :format: html
 
