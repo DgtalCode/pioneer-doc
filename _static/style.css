@@ -28,19 +28,19 @@
 /*Параметры для класса flexrow. Вызов через .. container:: flexrow */
 
 .flexrow{
-	display: flex;
-	flex-direction: row;
-	margin: -8px;
+    display: flex;
+    flex-direction: row;
+    margin: -8px;
 }
 .flexrow img{
-	padding: 0px 8px;	
+    padding: 0px 8px;   
 }
 
 @media(max-width: 1400px){
-	.flexrow{
-		flex-wrap: wrap;
-		top: 20px;
-	}
+    .flexrow{
+        flex-wrap: wrap;
+        top: 20px;
+    }
 }
 
 /*Для скрытия больших объектов с кодом в классе codeblocksize1*/
@@ -52,16 +52,22 @@
 }
 
 .codeblocksize1 .linenodiv pre{
-	color: #c9c9c9;
+    color: #c9c9c9;
 }
 
 .codeblocksize1 .code{
-	width: 100%;
+    width: 100%;
 }
 
 /*Замена сломанного отображения codeblock → перенести в основные стили?*/
 /*theme.css 7030*/
 
+.field-list.simple{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Footer → replace in footer.css or theme.css*/
 footer a {
     color: #7e7e7e;
     font-weight: bold;
@@ -73,12 +79,6 @@ footer a:hover {
     color: #505050;
 }
 
-.field-list.simple{
-    display: flex;
-    flex-direction: column;
-}
-
-/*Footer → replace in footer.css or theme.css*/
 .projectInfo{
     display: flex;
     flex-direction: column; 
@@ -111,5 +111,3 @@ footer a:hover {
 .socialIcon a:hover path{
     fill: #313131bd;
 }
-
-

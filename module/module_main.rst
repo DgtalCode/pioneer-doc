@@ -27,6 +27,7 @@
    :caption: Содержание:
 
    board
+   esp32
    cargo
    gps
    openMV
