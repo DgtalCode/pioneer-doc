@@ -161,7 +161,8 @@ html_js_files = [
     'js/tiles.js',
     'js/index.js',
     'newsMsg.js',
-    'topNavScroll.js'
+    'topNavScroll.js',
+    'tabs.js'
 ]
 
 # Custom sidebar templates, must be a dictionary that maps document names

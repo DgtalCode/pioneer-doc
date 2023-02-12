@@ -3,7 +3,14 @@
 // wait loading a pages and styles
 window.onload = function(){
 	
-	let newsMsgFlag = document.cookie.match(/newsMsgFlag=(.+?)(;|$)/);	
+	//Проверка, что файл находится не на локальной машине
+	let urlCheck = document.location.href;
+	// console.log(urlCheck);
+	if(urlCheck.indexOf('file') != -1){		
+		return;
+	}
+
+	let newsMsgFlag = document.cookie.match(/newsMsgFlag=(.+?)(;|$)/);
 	if (newsMsgFlag != null && newsMsgFlag[1] == 1 ){
 		// console.log('not now')
 	}	

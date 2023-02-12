@@ -111,3 +111,40 @@ footer a:hover {
 .socialIcon a:hover path{
     fill: #313131bd;
 }
+
+/*Стили табов → перенести в основные стили?*/
+.tabs{
+    border:;
+}
+.tabs_nav{
+    display: flex;
+    /*justify-content: center;*/
+    flex-wrap: wrap;
+    background: transparent;
+    margin: 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.tabs_btn{
+    flex: 1;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.tabs_btn_active{
+    background: #c9c9c9;
+    cursor: default;
+}
+
+.tabs_btn:not(.tabs_btn_active):hover,
+.tabs_btn:not(.tabs_btn_active):focus{
+    background-color: #c9c9c9;
+}
+
+.tabs_pane{
+    display: none;
+}
+.tabs_pane_show{
+    display: block;
+}
