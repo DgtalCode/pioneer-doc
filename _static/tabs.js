@@ -60,11 +60,10 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		new Tabs(tabs[i]);
 	}
 
-	// Запрос и заполнение табов перенести в SOFRWARE.js
-	
+	// Запрос и заполнение табов перенести в SOFRWARE.js	
 
 	function search(){
-		let url = "https://raw.githubusercontent.com/dkonasov-techsup/web.projects/main/testjson.json";		
+		let url = "https://docs.geoscan.aero/ru/beta-1/_static/testjson.json";		
 		fetch(url,{mode:'cors',headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':'*'}})
 			.then((response)=>{				
 				return response.json()				
@@ -93,5 +92,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		let paneHeader = document.createElement('div');
 
 	})
+
+
 
 })

@@ -26,9 +26,7 @@ Software - подраздел в котором вы сможете найти �
 		<div class="tabs_content">
 
 			<div class="tabs_pane tabs_pane_show">
-				<span>Стабильные</span>
-				<span>Тестовые</span>
-				<span>Aрхив</span>
+
 			</div>
 
 			<div class="tabs_pane">
@@ -41,6 +39,8 @@ Software - подраздел в котором вы сможете найти �
 
 		</div>
 	</div>
+
+
 
 ________
 
