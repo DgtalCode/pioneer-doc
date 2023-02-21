@@ -62,25 +62,22 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
 	// Запрос и заполнение табов перенести в SOFRWARE.js	
 
-	function search(){
-		let url = "https://docs.geoscan.aero/ru/beta-1/_static/testjson.json";		
-		fetch(url,{mode:'cors',headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':'*'}})
-			.then((response)=>{				
-				return response.json()				
-			})
-			// .then((response)=>{
-			// 	console.log(response.json());
-			// })
-			.catch((error)=>{
-				console.log('Error during fetch: ' + error.message);
-			});
+	// function search(){
+	// 	let url = "https://docs.geoscan.aero/ru/beta-1/_static/testjson.json";		
+	// 	fetch(url,{mode:'cors',headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':'*'}})
+	// 		.then((response)=>{				
+	// 			return response.json()				
+	// 		})
+	// 		// .then((response)=>{
+	// 		// 	console.log(response.json());
+	// 		// })
+	// 		.catch((error)=>{
+	// 			console.log('Error during fetch: ' + error.message);
+	// 		});
 		 
-	};
-							
-	
-
-	let resp = search()
-	console.log(resp);
+	// };
+	// let resp = search()
+	// console.log(resp);
 
 	// document.getElementsByClassName('tabs_pane_show')[0].innerHTML = search();
 		

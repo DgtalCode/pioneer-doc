@@ -32,7 +32,7 @@
 
 3. В диалоговом окне укажите путь к папке с параметрами, после чего выберите необходимый файл с расширением **.properties** и нажмите **"Открыть"**.
 
-	.. figure:: media/open_prop.PNG
+	.. figure:: media/open_prop.png
 
 4. В открывшемся окне, вы увидите отличающиеся значения. Изображение снизу является примером. В колонке "Автопилот" отображаются текущие параметры, в столбце "Файл" находятся новые значения параметров которые будут изменены. Нажмите кнопку "ОК".
 
@@ -82,9 +82,9 @@ Pioneer Station позволяет сохранять свои сборки па
 
 .. |update| image:: media/update_param.PNG
 
-.. |btnLPS| image:: media/btn_lps.PNG
+.. |btnLPS| image:: media/btn_LPS.PNG
 
-.. |btnOPT| image:: media/btn_opt.PNG
+.. |btnOPT| image:: media/btn_OPT.PNG
 
 ..
 
