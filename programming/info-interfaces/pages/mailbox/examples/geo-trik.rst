@@ -14,8 +14,8 @@
 .. raw:: html
 
     <div style="width:100%; display:flex; justify-content: space-evenly;">
-    <img src="../../../../_static/images/geo-trik_main_interaction.png" style="max-width:200px">
-    <img src="../../../../_static/images/geo-trik_interaction_settings.png" style="max-width:200px">
+    <img src="../../../../_static/images/geo-trik_main_interaction.png" style="max-width:40%">
+    <img src="../../../../_static/images/geo-trik_interaction_settings.png" style="max-width:40%">
     </div>
 
 Код для квадрокоптера на Lua:
