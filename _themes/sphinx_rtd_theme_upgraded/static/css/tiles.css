@@ -12,7 +12,7 @@
     box-shadow: 0px 15px 15px -10px #00000026;
     /*border-radius: 6px;*/
     display: grid;
-    grid-template-columns: max(80px, 10%) 25% 2% 2% 55%;
+    grid-template-columns: max(80px, 10%) 35% 2% 2% 45%;
     /*grid-template-rows: var(--tile-height) auto;*/     /*параметр устанавливается внутри html директивой tile */
     /*height: var(--tile-height);*/                      /*параметр устанавливается внутри html директивой tile */
     grid-template-rows: var(--tile-height) auto;
@@ -141,6 +141,10 @@
     }
 
 
+    .tile .content blockquote {
+        margin-left: 0px;
+    }
+
     .tile.no-image {
         grid-template-columns: minmax(50px, 100px) 15px minmax(185px, auto);
     }
@@ -171,9 +175,31 @@
     }
 }
 
-@media (max-width: 415px), (max-height: 415px) {
+@media (max-width: 800px) {
+    .tile .content .code {
+        width: 79vw;
+    }
+
+    .tile .content .code .highlight pre {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 415px) {
     .tile .content * {
         font-size: 15px;
+    }
+
+    .tile .content img {
+        max-width: 90%;
+        max-height: 340px;
+    }
+
+    .tile .header p,
+    .tile .caption p {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        font-size: 14px;
     }
 
     .tile {
