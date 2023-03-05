@@ -12,7 +12,7 @@
     box-shadow: 0px 15px 15px -10px #00000026;
     /*border-radius: 6px;*/
     display: grid;
-    grid-template-columns: 100px 300px minmax(0, 10px) 15px minmax(330px, auto);
+    grid-template-columns: max(80px, 10%) 25% 2% 2% 55%;
     /*grid-template-rows: var(--tile-height) auto;*/     /*параметр устанавливается внутри html директивой tile */
     /*height: var(--tile-height);*/                      /*параметр устанавливается внутри html директивой tile */
     grid-template-rows: var(--tile-height) auto;
@@ -26,19 +26,21 @@
 }
 
 .tile.no-image.no-any-text {
-    grid-template-columns: 100px auto;
+    grid-template-columns: max(80px, 10%) 90%;
 }
 
-.tile div {
+.tile:first-child {
     margin: 15px;
 }
 
 .tile .header,
 .tile .caption {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    /*margin-top: 0;*/
+    /*margin-bottom: 0;*/
+    /*padding-top: 25px;*/
+    /*padding-bottom: 25px;*/
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .tile p,
@@ -97,6 +99,7 @@
 }
 
 .tile .content {
+    align-self: start;
     grid-column-start: 1;
     grid-column-end: -1;
     grid-row-start: 2;
@@ -146,7 +149,7 @@
     }
 
     .tile.no-image.no-any-text {
-        grid-template-columns: minmax(50px, 100px) auto;
+        grid-template-columns: max(80px, 10%) auto;
     }
 
     .tile hr {
@@ -174,7 +177,11 @@
     }
 
     .tile {
-        grid-template-columns: minmax(50px, 120px) minmax(10px, 15px) 185px;
+        grid-template-columns: 70px 10px auto;
+    }
+
+    .tile.no-image.no-any-text {
+        grid-template-columns: max(80px, 10%) auto;
     }
 
     .tile .image{

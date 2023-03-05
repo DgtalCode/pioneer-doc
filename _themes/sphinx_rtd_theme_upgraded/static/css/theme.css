@@ -6437,7 +6437,7 @@ footer span.commit code {
     text-align: right;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:800px) {
 	.wy-body-for-nav {
 
 	}
