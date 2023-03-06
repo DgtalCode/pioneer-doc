@@ -21,7 +21,7 @@ class Tabs{
 	}
 
 	show(elLinkTarget){
-		console.log('show');
+		// console.log('show');
 		const elPanelTarget = this.elPanes[elLinkTarget.dataset.index];
 		const elLinkActive = this.elTabs.querySelector('.tabs_btn_active');
 		const elPanelShow = this.elTabs.querySelector('.tabs_pane_show');
@@ -60,36 +60,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
 		new Tabs(tabs[i]);
 	}
 
-	// Запрос и заполнение табов перенести в SOFRWARE.js	
-
-	// function search(){
-	// 	let url = "https://docs.geoscan.aero/ru/beta-1/_static/testjson.json";		
-	// 	fetch(url,{mode:'cors',headers:{'Content-Type':'application/json','Access-Control-Allow-Origin':'*'}})
-	// 		.then((response)=>{				
-	// 			return response.json()				
-	// 		})
-	// 		// .then((response)=>{
-	// 		// 	console.log(response.json());
-	// 		// })
-	// 		.catch((error)=>{
-	// 			console.log('Error during fetch: ' + error.message);
-	// 		});
-		 
-	// };
-	// let resp = search()
-	// console.log(resp);
-
-	// document.getElementsByClassName('tabs_pane_show')[0].innerHTML = search();
-		
-
 	let tabsPane = document.querySelectorAll('.tabs_pane');
-	console.log(tabsPane);
+	// console.log(tabsPane);
 
 	tabsPane.forEach((item, index) =>{		
 		let paneHeader = document.createElement('div');
-
 	})
-
-
 
 })
