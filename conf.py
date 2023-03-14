@@ -40,6 +40,7 @@ rst_epilog = """
 .. |utd_gs_jump| replace:: 1.14
 
 .. |utd_ap_base| replace:: 1.6.7178
+.. |utd_param_base| replace:: 1.6.7178 (update)
 .. |utd_ap_max| replace:: 1.6.7287
 
 .. |fw_ap_mini| replace:: `Pioneer Mini 1.6.9202 <https://disk.yandex.ru/d/HgeUOCpiQfwvOA>`__
