@@ -149,13 +149,16 @@
     }
 }
 
-@media(max-width: 380px ){
-    .msgHeader{
-       font-size: 34px;
+@media(max-width: 380px ) {
+    .msgHeader {
+        font-size: 34px;
     }
-    .msgContent{
+
+    .msgContent {
         font-size: 17px;
     }
-    .msgBtn{
-        font-size: 17px;             
+
+    .msgBtn {
+        font-size: 17px;
     }
+}

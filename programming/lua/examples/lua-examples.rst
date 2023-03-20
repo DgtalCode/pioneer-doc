@@ -5,7 +5,7 @@
 
 .. toctree::
    :maxdepth: 1
+   :glob:
    :caption: Примеры:
 
-   go_to_local_point
-   camera_record
+   sections/*

@@ -1,17 +1,16 @@
 Программирование
-================
+=========================
 
 Кроме полета на дистанционном управлении, "Пионер" может следовать заложенной перед взлетом программе и автономно выполнять прописанные задачи. Для удобства программирования квадрокоптер поддерживает работу с такими инструментами как Pioneer Station и TRIK Studio, которые позволяют сформировать полетное задание и загрузить его в память "Пионера" при подключении к компьютеру.
 В этом разделе вы научитесь работать с квадрокоптером через интерфейс Pioneer Station, рассмотрите примеры полетных сценариев и узнаете как программировать подключаемые модули.
 
-
-
- .. toctree::
+.. toctree::
    :maxdepth: 2
    :caption: Содержание:
 
+   /programming/info-interfaces/info-interfaces
    /programming/trik/trik_main
    /programming/pioneer_station/pioneer_station_main
    /programming/lua/lua_main
-   python/python_main
-   pioneer_max/max_main
+   /programming/python/python_main
+   /programming/pioneer_max/max_main
